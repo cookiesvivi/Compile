@@ -1,0 +1,67 @@
+int main ()
+{
+  int D.49113;
+
+  {
+    int a;
+    int b;
+    int i;
+    int t;
+    int n;
+
+    try
+      {
+        a = 0;
+        b = 1;
+        i = 1;
+        std::basic_istream<char>::operator>> (&cin, &n);
+        _1 = std::basic_ostream<char>::operator<< (&cout, a);
+        std::basic_ostream<char>::operator<< (_1, endl);
+        _2 = std::basic_ostream<char>::operator<< (&cout, b);
+        std::basic_ostream<char>::operator<< (_2, endl);
+        goto <D.44267>;
+        <D.44268>:
+        t = b;
+        b = a + b;
+        _3 = std::basic_ostream<char>::operator<< (&cout, b);
+        std::basic_ostream<char>::operator<< (_3, endl);
+        a = t;
+        i = i + 1;
+        <D.44267>:
+        n.0_4 = n;
+        if (i < n.0_4) goto <D.44268>; else goto <D.44266>;
+        <D.44266>:
+      }
+    finally
+      {
+        n = {CLOBBER};
+      }
+  }
+  D.49113 = 0;
+  return D.49113;
+}
+
+
+void __static_initialization_and_destruction_0 (int __initialize_p, int __priority)
+{
+  if (__initialize_p == 1) goto <D.49120>; else goto <D.49121>;
+  <D.49120>:
+  if (__priority == 65535) goto <D.49122>; else goto <D.49123>;
+  <D.49122>:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxxabiv1::__cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+  goto <D.49124>;
+  <D.49123>:
+  <D.49124>:
+  goto <D.49125>;
+  <D.49121>:
+  <D.49125>:
+}
+
+
+void _GLOBAL__sub_I_main ()
+{
+  __static_initialization_and_destruction_0 (1, 65535);
+}
+
+

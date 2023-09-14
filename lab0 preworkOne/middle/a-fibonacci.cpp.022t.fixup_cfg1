@@ -1,0 +1,113 @@
+
+;; Function main (main, funcdef_no=1731, decl_uid=44205, cgraph_uid=465, symbol_order=495)
+
+int main ()
+{
+  struct basic_ostream & D.49117;
+  struct basic_ostream & D.49116;
+  struct basic_ostream & D.49115;
+  int n;
+  int t;
+  int i;
+  int b;
+  int a;
+  int D.49113;
+
+  <bb 2> :
+  a = 0;
+  b = 1;
+  i = 1;
+  std::basic_istream<char>::operator>> (&cin, &n);
+
+  <bb 3> :
+  D.49115 = std::basic_ostream<char>::operator<< (&cout, a);
+
+  <bb 4> :
+  _1 = D.49115;
+  std::basic_ostream<char>::operator<< (_1, endl);
+
+  <bb 5> :
+  D.49116 = std::basic_ostream<char>::operator<< (&cout, b);
+
+  <bb 6> :
+  _2 = D.49116;
+  std::basic_ostream<char>::operator<< (_2, endl);
+
+  <bb 7> :
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+  t = b;
+  b = a + b;
+  D.49117 = std::basic_ostream<char>::operator<< (&cout, b);
+
+  <bb 9> :
+  _3 = D.49117;
+  std::basic_ostream<char>::operator<< (_3, endl);
+
+  <bb 10> :
+  a = t;
+  i = i + 1;
+
+  <bb 11> :
+  n.0_4 = n;
+  if (i < n.0_4)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  n = {CLOBBER};
+  D.49113 = 0;
+
+  <bb 13> :
+<L3>:
+  return D.49113;
+
+  <bb 14> :
+<L4>:
+  n = {CLOBBER};
+  resx 1
+
+}
+
+
+
+;; Function __static_initialization_and_destruction_0 (_Z41__static_initialization_and_destruction_0ii, funcdef_no=2231, decl_uid=49105, cgraph_uid=965, symbol_order=1022)
+
+void __static_initialization_and_destruction_0 (int __initialize_p, int __priority)
+{
+  <bb 2> :
+  if (__initialize_p == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  if (__priority == 65535)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  std::ios_base::Init::Init (&__ioinit);
+  __cxxabiv1::__cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function _GLOBAL__sub_I_main (_GLOBAL__sub_I_main, funcdef_no=2232, decl_uid=49111, cgraph_uid=966, symbol_order=1141)
+
+void _GLOBAL__sub_I_main ()
+{
+  <bb 2> :
+  __static_initialization_and_destruction_0 (1, 65535);
+  return;
+
+}
+
+
