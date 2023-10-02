@@ -1,0 +1,21 @@
+MOV temp0, 6
+MOV temp1, 2
+MOV temp2, temp0
+DIV temp2, temp1
+MOV temp3, 3
+MOV temp4, temp2
+ADD temp4, temp3
+MOV temp5, 2
+MOV temp6, temp4
+MUL temp6, temp5
+MOV temp7, 1
+MOV temp8, temp6
+SUB temp8, temp7
+Result in: temp8
+---------------------------
+MOV temp9, a
+MOV temp10, 1
+MOV temp11, temp9
+ADD temp11, temp10
+Result in: temp11
+---------------------------

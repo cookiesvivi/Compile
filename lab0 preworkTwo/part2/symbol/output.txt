@@ -1,0 +1,26 @@
+Current SymbolTable:-------------------------------
+x = 0
+c = 2.5
+b = 20
+d = 16
+a = 8
+Calculate result:
+1.000000
+Current SymbolTable:-------------------------------
+y = 0
+x = 0
+c = 2.5
+b = 20
+d = 16
+a = 8
+Calculate result:
+0.000000
+Current SymbolTable:-------------------------------
+y = 0
+x = 0
+c = 2.5
+b = 20
+d = 16
+a = 8
+Calculate result:
+5.000000
